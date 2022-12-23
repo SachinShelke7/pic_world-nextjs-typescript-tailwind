@@ -1,0 +1,1065 @@
+[
+    [
+        "$r",
+        "MaxWidth",
+        "last",
+        {
+            "children": [
+                [
+                    "$r",
+                    "Intro",
+                    null,
+                    {
+                        "children": [
+                            "$r",
+                            "p",
+                            null,
+                            {
+                                "children": [
+                                    [
+                                        "$r",
+                                        "em",
+                                        null,
+                                        {
+                                            "children": "Hooks"
+                                        }
+                                    ],
+                                    " let you use different React features from your components. You can either use the built-in Hooks or combine them to build your own. This page lists all the built-in Hooks in React."
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "InlineToc",
+                    null,
+                    {}
+                ],
+                "\n",
+                [
+                    "$r",
+                    "hr",
+                    null,
+                    {}
+                ],
+                "\n",
+                [
+                    "$r",
+                    "h2",
+                    null,
+                    {
+                        "id": "state-hooks",
+                        "children": "State Hooks "
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": [
+                            [
+                                "$r",
+                                "a",
+                                null,
+                                {
+                                    "href": "/learn/state-a-components-memory",
+                                    "children": "State"
+                                }
+                            ],
+                            " lets a component “remember” information like user input. For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index."
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": "To add state to a component, use one of these Hooks:"
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "ul",
+                    null,
+                    {
+                        "children": [
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useState",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useState"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " declares a state variable that you can update directly."
+                                    ]
+                                }
+                            ],
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useReducer",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useReducer"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " declares a state variable with the update logic inside a ",
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/learn/extracting-state-logic-into-a-reducer",
+                                                "children": "reducer function."
+                                            }
+                                        ]
+                                    ]
+                                }
+                            ],
+                            "\n"
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "pre",
+                    null,
+                    {
+                        "children": [
+                            "$r",
+                            "code",
+                            null,
+                            {
+                                "className": "language-js",
+                                "children": "function ImageGallery() {\n  const [index, setIndex] = useState(0);\n  // ...\n"
+                            }
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": [
+                            "$r",
+                            "a",
+                            null,
+                            {
+                                "href": "/apis/react/useState",
+                                "children": [
+                                    "See the ",
+                                    [
+                                        "$r",
+                                        "code",
+                                        null,
+                                        {
+                                            "children": "useState"
+                                        }
+                                    ],
+                                    " page for more examples."
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "hr",
+                    null,
+                    {}
+                ],
+                "\n",
+                [
+                    "$r",
+                    "h2",
+                    null,
+                    {
+                        "id": "context-hooks",
+                        "children": "Context Hooks "
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": [
+                            [
+                                "$r",
+                                "a",
+                                null,
+                                {
+                                    "href": "/learn/passing-data-deeply-with-context",
+                                    "children": "Context"
+                                }
+                            ],
+                            " lets a component receive information from distant parents without ",
+                            [
+                                "$r",
+                                "a",
+                                null,
+                                {
+                                    "href": "/learn/passing-props-to-a-component",
+                                    "children": "passing it as props."
+                                }
+                            ],
+                            " For example, your app’s top-level component can pass the current UI theme to all components below, no matter how deep."
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "ul",
+                    null,
+                    {
+                        "children": [
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useContext",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useContext"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " reads and subscribes to a context."
+                                    ]
+                                }
+                            ],
+                            "\n"
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "pre",
+                    null,
+                    {
+                        "children": [
+                            "$r",
+                            "code",
+                            null,
+                            {
+                                "className": "language-js",
+                                "children": "function Button() {\n  const theme = useContext(ThemeContext);\n  // ...\n"
+                            }
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": [
+                            "$r",
+                            "a",
+                            null,
+                            {
+                                "href": "/apis/react/useContext",
+                                "children": [
+                                    "See the ",
+                                    [
+                                        "$r",
+                                        "code",
+                                        null,
+                                        {
+                                            "children": "useContext"
+                                        }
+                                    ],
+                                    " page for more examples."
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "hr",
+                    null,
+                    {}
+                ],
+                "\n",
+                [
+                    "$r",
+                    "h2",
+                    null,
+                    {
+                        "id": "ref-hooks",
+                        "children": "Ref Hooks "
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": [
+                            [
+                                "$r",
+                                "a",
+                                null,
+                                {
+                                    "href": "/learn/referencing-values-with-refs",
+                                    "children": "Refs"
+                                }
+                            ],
+                            " let a component hold some information that isn’t used for rendering, like a DOM node or a timeout ID. Unlike with state, updating a ref does not re-render your component. Refs are an “escape hatch” from the React paradigm. They are useful when you need to work with non-React systems, such as the built-in browser APIs."
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "ul",
+                    null,
+                    {
+                        "children": [
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useRef",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useRef"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " declares a ref. You can hold any value in it, but most often it’s used to hold a DOM node."
+                                    ]
+                                }
+                            ],
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useImperativeHandle",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useImperativeHandle"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " lets you customize the ref exposed by your component. This is rarely used."
+                                    ]
+                                }
+                            ],
+                            "\n"
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "pre",
+                    null,
+                    {
+                        "children": [
+                            "$r",
+                            "code",
+                            null,
+                            {
+                                "className": "language-js",
+                                "children": "function Form() {\n  const inputRef = useRef(null);\n  // ...\n"
+                            }
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": [
+                            "$r",
+                            "a",
+                            null,
+                            {
+                                "href": "/apis/react/useRef",
+                                "children": [
+                                    "See the ",
+                                    [
+                                        "$r",
+                                        "code",
+                                        null,
+                                        {
+                                            "children": "useRef"
+                                        }
+                                    ],
+                                    " page for more examples."
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "hr",
+                    null,
+                    {}
+                ],
+                "\n",
+                [
+                    "$r",
+                    "h2",
+                    null,
+                    {
+                        "id": "effect-hooks",
+                        "children": "Effect Hooks "
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": [
+                            [
+                                "$r",
+                                "a",
+                                null,
+                                {
+                                    "href": "/learn/synchronizing-with-effects",
+                                    "children": "Effects"
+                                }
+                            ],
+                            " let a component connect to and synchronize with external systems. This includes dealing with network, browser DOM, animations, widgets written using a different UI library, and in general any non-React code."
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "ul",
+                    null,
+                    {
+                        "children": [
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useEffect",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useEffect"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " connects a component to an external system."
+                                    ]
+                                }
+                            ],
+                            "\n"
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "pre",
+                    null,
+                    {
+                        "children": [
+                            "$r",
+                            "code",
+                            null,
+                            {
+                                "className": "language-js",
+                                "children": "function ChatRoom({ roomId }) {\n  useEffect(() => {\n    const connection = createConnection(roomId);\n    connection.connect();\n    return () => connection.disconnect();\n  }, [roomId]);\n  // ...\n"
+                            }
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": [
+                            "$r",
+                            "a",
+                            null,
+                            {
+                                "href": "/apis/react/useEffect",
+                                "children": [
+                                    "See the ",
+                                    [
+                                        "$r",
+                                        "code",
+                                        null,
+                                        {
+                                            "children": "useEffect"
+                                        }
+                                    ],
+                                    " page for more examples."
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": [
+                            "Effects are an “escape hatch” from the React paradigm. Don’t use Effects to orchestrate the data flow of your application. If you’re not interacting with an external system, ",
+                            [
+                                "$r",
+                                "a",
+                                null,
+                                {
+                                    "href": "/learn/you-might-not-need-an-effect",
+                                    "children": "you might not need an Effect."
+                                }
+                            ]
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": [
+                            "There are two variations of ",
+                            [
+                                "$r",
+                                "code",
+                                null,
+                                {
+                                    "children": "useEffect"
+                                }
+                            ],
+                            " with differences in timing:"
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "ul",
+                    null,
+                    {
+                        "children": [
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useLayoutEffect",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useLayoutEffect"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " fires before the browser repaints the screen. You can measure layout here."
+                                    ]
+                                }
+                            ],
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useInsertionEffect",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useInsertionEffect"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " fires before React makes changes to the DOM. Libraries can insert dynamic CSS here."
+                                    ]
+                                }
+                            ],
+                            "\n"
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": "They are rarely used."
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "hr",
+                    null,
+                    {}
+                ],
+                "\n",
+                [
+                    "$r",
+                    "h2",
+                    null,
+                    {
+                        "id": "performance-hooks",
+                        "children": "Performance Hooks "
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": "A common way to optimize re-rendering performance is to skip unnecessary work. For example, you can tell React to reuse a cached calculation or to skip a re-render if the data has not changed since the previous render."
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": "To skip calculations and unnecessary re-rendering, use one of these Hooks:"
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "ul",
+                    null,
+                    {
+                        "children": [
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useMemo",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useMemo"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " lets you cache the result of an expensive calculation."
+                                    ]
+                                }
+                            ],
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useCallback",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useCallback"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " lets you cache a function definition before passing it down to an optimized component."
+                                    ]
+                                }
+                            ],
+                            "\n"
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "pre",
+                    null,
+                    {
+                        "children": [
+                            "$r",
+                            "code",
+                            null,
+                            {
+                                "className": "language-js",
+                                "children": "function TodoList({ todos, tab, theme }) {\n  const visibleTodos = useMemo(() => filterTodos(todos, tab), [todos, tab]);\n  // ...\n}\n"
+                            }
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": [
+                            "$r",
+                            "a",
+                            null,
+                            {
+                                "href": "/apis/react/useMemo",
+                                "children": [
+                                    "See the ",
+                                    [
+                                        "$r",
+                                        "code",
+                                        null,
+                                        {
+                                            "children": "useMemo"
+                                        }
+                                    ],
+                                    " page for more examples."
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": "Sometimes, you can’t skip re-rendering because the screen actually needs to update. In that case, you can improve performance by separating blocking updates that must be synchronous (like typing into an input) from non-blocking updates which don’t need to block the user interface (like updating a chart)."
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": "To prioritize rendering, use one of these Hooks:"
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "ul",
+                    null,
+                    {
+                        "children": [
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useTransition",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useTransition"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " lets you mark a state transition as non-blocking and allow other updates to interrupt it."
+                                    ]
+                                }
+                            ],
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useDeferredValue",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useDeferredValue"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " lets you defer updating a non-critical part of the UI and let other parts update first."
+                                    ]
+                                }
+                            ],
+                            "\n"
+                        ]
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "hr",
+                    null,
+                    {}
+                ],
+                "\n",
+                [
+                    "$r",
+                    "h2",
+                    null,
+                    {
+                        "id": "other-hooks",
+                        "children": "Other Hooks "
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "p",
+                    null,
+                    {
+                        "children": "These Hooks are mostly useful to library authors and aren’t commonly used in the application code."
+                    }
+                ],
+                "\n",
+                [
+                    "$r",
+                    "ul",
+                    null,
+                    {
+                        "children": [
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useDebugValue",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useDebugValue"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " lets you customize the label React DevTools displays for your custom Hook."
+                                    ]
+                                }
+                            ],
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useId",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useId"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " lets a component associate a unique ID with itself. Typically used with accessibility APIs."
+                                    ]
+                                }
+                            ],
+                            "\n",
+                            [
+                                "$r",
+                                "li",
+                                null,
+                                {
+                                    "children": [
+                                        [
+                                            "$r",
+                                            "a",
+                                            null,
+                                            {
+                                                "href": "/apis/react/useSyncExternalStore",
+                                                "children": [
+                                                    "$r",
+                                                    "code",
+                                                    null,
+                                                    {
+                                                        "children": "useSyncExternalStore"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        " lets a component subscribe to an external store."
+                                    ]
+                                }
+                            ],
+                            "\n"
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]
